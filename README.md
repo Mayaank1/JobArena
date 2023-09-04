@@ -1,4 +1,4 @@
-• The website layout is designed with a header section that provides easy navigation to various
+• The website layout is designed with a header section that provides easy  navigation to various
 pages, enhancing user accessibility and engagement.
 • Two essential forms are integrated into the website. The contact form allows users to submit
 inquiries, while the test drive form, implemented using jQuery, provides dynamic form
