@@ -1,0 +1,243 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static  'css/Styles.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <a href="/"> <img src="{% static  'css/Images/Screenshot 2023-05-21 120544.png'%}"  class="logo"></a>
+        <ul id="navbar">
+            <li><a  href="">Overview</a></li>
+            <li><a class="active" href="companies">Find Companies</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="support">Support</a></li>
+        </ul>
+    
+    </div>
+
+    <div id="Company-header">
+    </div>
+    <div id="companies">
+        <h2>Popular Companies</h2>
+        <div class="comp-container">
+            
+            <div class="comp">
+                <img src="{% static 'css/Images/microsoft1.png'%}" alt="">
+                <div class="des">
+                    <h5>Microsoft</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='microsoft'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img id="accen"src="{% static 'css/Images/Accenture.png'%}" alt="">
+                <div class="des">
+                    <h5>Accenture</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='accenture'">Learn more</button>
+                </div>
+
+            </div>
+
+
+            <div class="comp">
+                <img src="{% static 'css/Images/jpmc.png'%}" alt="">
+                <div class="des">
+                    <h5>JP Morgan & Chase</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='jpmc'">Learn more</button>
+                </div>
+
+            </div>
+
+
+            <div class="comp">
+                <img src="{% static 'css/Images/google.png'%}" alt="">
+                <div class="des">
+                    <h5>Google</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <button type="button"  onclick="window.location.href='google'">Learn more</button>
+                </div>
+
+            </div>
+
+
+            <div class="comp">
+                <img src="{% static 'css/Images/meta.png'%}" alt="">
+                <div class="des">
+                    <h5>Meta</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='meta'">Learn more</button>
+                </div>
+
+            </div>
+
+
+            <div class="comp">
+                <img src="{% static 'css/Images/intel.png'%}" alt="">
+                <div class="des">
+                    <h5>Intel</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='intel'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/tcs.png'%}" alt="">
+                <div class="des">
+                    <h5>TCS</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='tcs'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/Oracle.jpg'%}" alt="">
+                <div class="des">
+                    <h5>Oracle</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='oracle'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/Sf.png'%} "alt="">
+                <div class="des">
+                    <h5>Salesforce</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='salesforce'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/IBM.png'%}" alt="">
+                <div class="des">
+                    <h5>IBM</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='ibm'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/Amazon.png'%}" alt="">
+                <div class="des">
+                    <h5>Amazon</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='amazon'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/Qualcomm.png'%}" alt="">
+                <div class="des">
+                    <h5>Qualcomm</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐</p>
+                    <button type="button"onclick="window.location.href='qualcomm'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/Capgemini.png'%}" alt="">
+                <div class="des">
+                    <h5>Capgemini</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='template'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/Deloitte.png'%}" alt="">
+                <div class="des">
+                    <h5>Deloitte</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='deloitte'">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="comp">
+                <img src="{% static 'css/Images/Novartis.png'%}" alt="">
+                <div class="des">
+                    <h5>HCL</h5>
+                    <div class="star"></div>
+                    <p>⭐⭐⭐</p>
+                    <button type="button" onclick="window.location.href='hcl'">Learn more</button>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+
+    <section class="newsletter">
+        <div class="newstext">
+            <h1>Sign Up for Newsletters</h1>
+            <p>Get e-mail updates about latest recruitment details</p>
+        </div>
+        <form  class="form" action="">
+            <input type="text" placeholder="Enter your mail address">
+            <button>Sign-Up</button>
+        </form>
+    </section>
+
+    <footer class="sectionp1">
+        <div class="col">
+            <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}" alt="">
+            <p><strong>Address:</strong>C. d'Arístides Maillol, 12, 08028 Hyderabad</p>
+            <p><strong>Phone:</strong>(+91) 9059301111/(+91) 7842759904</p>
+            <p><strong>Hours:</strong> 9:30 - 1:30</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="#" class="fa fa-facebook"></a>  
+                    <a href="#" class="fa fa-twitter"></a>  
+                    <a href="#" class="fa fa-pinterest"></a>  
+                    <a href="#" class="fa fa-linkedin"></a>  
+                    <a href="#" class="fa fa-instagram"></a>  
+                    <a href="#" class="fa fa-youtube"></a>  
+    
+                </div>
+            </div>
+        </div>
+        <div class="col1">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

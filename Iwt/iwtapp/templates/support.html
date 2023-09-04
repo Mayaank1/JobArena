@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="{% static  'css/Styles.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="/"> <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}"  class="logo"></a>
+        <ul id="navbar">
+            <li><a href="">Overview</a></li>
+            <li><a href="companies">Find Companies</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a  class="active" href="support">Support</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="sheader">
+        <h1>Contact Us</h1>
+    </div>
+    
+    <h2 style="text-align: center;">Let's Start a Conversation</h2>
+     <div class="scontainer" style="margin: 50px 20px;">
+        
+        <div class="simage">
+            <img src="{% static 'css/Images/support.jpg'%}" alt="">
+        </div>
+        
+        <div class="sform">
+            <h3>Please note:All fields are mandatory</h3>
+            <div class="log">
+                
+              </div>
+            <form action="submit_form_view" method="POST" >
+                {% csrf_token %} 
+                
+                    <table cellspacing="100px">
+                        <tr>
+                        <td ><label>First Name:</label> </td>
+                        <td><input type="text" id="fname" name="name"></td>
+                        <td></td>
+                    </tr>
+                    <tr><td><p id="fn"></p></td></tr>
+                    <tr>
+                        <td><label for="">Last Name:</label></td>
+                        <td><input type="text" id="lname"> </td>
+                    </tr> <tr><td><p id="ln"></p></td></tr>  
+                    <tr> 
+                        <td><label for="">Mobile No:</label> </td>
+                        <td><input type="text" id="mno" name="phone"></td>
+                    </tr><tr><td><p id="mob"></p></td></tr>
+                    <tr>
+                        <td><label for="">Company Name</label></td>
+                        <td><input type="text" id="cname"></td>
+                    </tr><tr><td><p id="cn"></p></td></tr>
+                    <tr>
+                        <td><label for="">Personal Email Id:</label></td>
+                        <td><input type="text" id="email" name="email"></td>
+                    </tr><tr><td><p id="em"></p></td></tr>
+                    <tr>
+                        <td><label for="">Comments:</label></td>
+                        
+                    </tr><tr><td><p id="cm"></p></td></tr>
+                    
+                
+                    </table>
+                    <table>
+                        <tr>
+                            <td><textarea name="" id="comments" cols="60" rows="10" name="comments"></textarea></td>
+                        </tr>
+                    </tr><tr><td><p class="error"></p></td></tr>
+                    </table>
+                    <input type="button" value="Submit" onclick="func()">
+            </form>
+        </div>
+
+     </div>
+
+<section class="newsletter">
+    <div class="newstext">
+        <h1>Sign Up for Newsletters</h1>
+        <p>Get e-mail updates about latest recruitment details</p>
+    </div>
+    <form  class="form" action="">
+        <input type="text" placeholder="Enter your mail address">
+        <button>Sign-Up</button>
+    </form>
+</section>
+
+<script type="text/javascript" src="{% static 'js/Validate.js'%}">
+    
+</script>
+
+</body>
+<footer class="sectionp1">
+    <div class="col">
+        <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}" alt="">
+        <p><strong>Address:</strong>C. d'Arístides Maillol, 12, 08028 Hyderabad</p>
+        <p><strong>Phone:</strong>(+91) 9059301111/(+91) 7842759904</p>
+        <p><strong>Hours:</strong> 9:30 - 1:30</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <a href="#" class="fa fa-facebook"></a>  
+                <a href="#" class="fa fa-twitter"></a>  
+                <a href="#" class="fa fa-pinterest"></a>  
+                <a href="#" class="fa fa-linkedin"></a>  
+                <a href="#" class="fa fa-instagram"></a>  
+                <a href="#" class="fa fa-youtube"></a>  
+
+            </div>
+        </div>
+    </div>
+    <div class="col1">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+</footer>
+</html>

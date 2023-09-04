@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn more</title>
+    <link rel="stylesheet" href="{% static  'css/Styles.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <a href="/"> <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}"  class="logo"></a>
+        <ul id="navbar">
+            <li><a href="index(Homepage).html">Overview</a></li>
+            <li><a  class="active" href="Companies.html">Find Companies</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    
+    </div>
+
+    <section class="Details">
+        <div class="dimagehcl">
+            
+        </div>
+        <div class="ddetails">
+            <h1>HCL</h1>
+            <h2>About the Company</h3>
+                <p>
+                    HCL Technologies is a global information technology (IT) services and consulting company headquartered in Noida, India. Established in 1976, HCL has grown into one of the largest IT services firms in India and has a presence in over 50 countries. The company offers a wide range of services and solutions to clients across various industries.
+                   <br><br>HCL serves clients across industries, including banking and financial services, healthcare, manufacturing, retail, telecommunications, and more. The company has a global customer base, ranging from small and medium-sized enterprises to large multinational corporations.<br><br>
+
+                   In addition to its service offerings, HCL has developed several proprietary frameworks and platforms that enable clients to accelerate their digital transformation journey. These include HCL's DRYiCE™ automation and orchestration platform, HCL Mode 1-2-3 strategy for business growth, and HCL's ecosystem of partners and alliances.<br><br>
+                   HCL places a strong emphasis on innovation and invests in research and development to stay at the forefront of technology. The company operates research labs and innovation centers around the world, collaborating with clients, academia, and technology partners to drive innovation and deliver cutting-edge solutions.<br><br>
+
+                   Overall, HCL Technologies is recognized as a global IT services and consulting company with a focus on digital transformation, engineering, and research and development. The company's customer-centric approach, broad range of services, and commitment to innovation have contributed to its growth and success in the IT industry.</p>
+
+        <h2>Job Opennings</h2>
+        <div class="job-container">
+            
+            <div class="job">
+                <div class="Jdetails">
+                <h6><em>new</em></h6>
+                <h2>IT Engineer</h2>
+                <p>Hyderabad,Telangana</p>
+                <div class="con">
+                    <p>🏢 Contractual/Temporary</p>
+                </div>
+                <p class="date">Posted 9 Hours ago</p>
+            </div>
+            </div>
+
+            <div class="job">
+                <div class="Jdetails">
+                <h6><em>new</em></h6>
+                <h2>Software Engineer</h2>
+                <p>Hyderabad,Telangana</p>
+                <div class="con">
+                    <p>🏢 Regular/Permanent</p>
+                </div>
+                <p class="date">Posted 3 days ago</p>
+            </div>
+            </div>
+
+            <div class="job">
+                <div class="Jdetails">
+                <h6><em>new</em></h6>
+                <h2>Data Analyst</h2>
+                <p>Hyderabad,Telangana</p>
+                <div class="con">
+                    <p>🏢 Regular/Permanent</p>
+                </div>
+                <p class="date">Posted 4 days ago</p>
+            </div>
+            </div>
+
+            <div class="job">
+                <div class="Jdetails">
+                <h6><em>new</em></h6>
+                <h2>Sales Executive</h2>
+                <p>Hyderabad,Telangana</p>
+                <div class="con">
+                    <p>🏢 Regular/Permanent</p>
+                </div>
+                <p class="date">Posted 5 days ago</p>
+            </div>
+            </div>
+
+            <div class="job">
+                <div class="Jdetails">
+                <h6><em>new</em></h6>
+                <h2>Computer Architect</h2>
+                <p>Hyderabad,Telangana</p>
+                <div class="con">
+                    <p>🏢 Contractual/Temporary</p>
+                </div>
+                <p class="date">Posted 10 days ago</p>
+            </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    </section>
+    
+    <section class="search">
+        <h3>Find other companies</h3>
+        <form  class="jform"action="" >
+            <input type="text" placeholder="Company name">
+            <button type="Submit">Submit</button>
+        </form>
+    </section>
+    <section class="newsletter">
+        <div class="newstext">
+            <h1>Sign Up for Newsletters</h1>
+            <p>Get e-mail updates about latest recruitment details</p>
+        </div>
+        <form  class="form" action="">
+            <input type="text" placeholder="Enter your mail address">
+            <button>Sign-Up</button>
+        </form>
+    </section>
+
+    <footer class="sectionp1">
+        <div class="col">
+            <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}" alt="">
+            <p><strong>Address:</strong>C. d'Arístides Maillol, 12, 08028 Hyderabad</p>
+            <p><strong>Phone:</strong>(+91) 9059301111/(+91) 7842759904</p>
+            <p><strong>Hours:</strong> 9:30 - 1:30</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="#" class="fa fa-facebook"></a>  
+                    <a href="#" class="fa fa-twitter"></a>  
+                    <a href="#" class="fa fa-pinterest"></a>  
+                    <a href="#" class="fa fa-linkedin"></a>  
+                    <a href="#" class="fa fa-instagram"></a>  
+                    <a href="#" class="fa fa-youtube"></a>  
+    
+                </div>
+            </div>
+        </div>
+        <div class="col1">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

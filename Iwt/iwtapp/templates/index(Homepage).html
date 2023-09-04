@@ -1,0 +1,95 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="{% static  'css/Styles.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+<div id="header";>
+    <a href="/"> <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}"  class="logo"></a>
+    <ul id="navbar">
+        <li><a class="active" href="">Overview</a></li>
+        <li><a href="companies">Find Companies</a></li>
+        <li><a href="support">Support</a></li>
+        {% if user.is_authenticated %}
+            <li>Hi {{user}}</li>
+            <li><a href=" {% url 'logout'%}">LogOut</a></li>
+        {% else %}
+
+            <li><a href="login">Login</a></li>
+        {% endif %}
+        
+    </ul>
+
+</div>
+<div id="hero">
+    <h1><strong>Job Arena: Helping Visitors Find 
+        <br> Jobs and Careers </strong></h1>
+    <h2>Find a career you'll love!!</h2>
+    <h4>Explore which careers have the highest job satisfaction, best salaries and more</h4>
+</div>
+
+<h1 class="indexheader">You are in good company</h1>
+<p class="indexpara">Over 1,40,000 companies use <b>JobArena</b> to hire. See why these amazing companies use us as their platform to hire dream talent.</p>
+<div class="alignment1">
+<div class="jobmcd">
+    <img src="{% static 'css/Images/mcd.jpg'%}" class="mcdimage">
+    <p class="mcdpara">JobArena helps the world’s largest family restaurant business to recruit high quality candidates for its hard-to-fill positions.</p>
+</div>
+<div class="jobmcd">
+    <img src="{% static 'css/Images/inst.jpg'%}" class="mcdimage">
+    <p class="mcdpara">The second oldest university in the world uses JobArena to draw targeted jobseeker traffic to fill both niche academic positions and corporate support roles.</p>
+</div>
+<div class="jobmcd">
+    <img src="{% static 'css/Images/nokia.jpg'%}" class="mcdimage">
+    <p class="mcdpara">The world leader in mobile communications uses JobArena Sponsored Jobs to lower its cost per applicant and cost per hire.</p>
+</div>
+</div>
+
+<section class="newsletter">
+    <div class="newstext">
+        <h1>Sign Up for Newsletters</h1>
+        <p>Get e-mail updates about latest recruitment details</p>
+    </div>
+    <form  class="form" action="">
+        <input type="text" placeholder="Enter your mail address">
+        <button>Sign-Up</button>
+    </form>
+</section>
+<footer class="sectionp1">
+    <div class="col">
+        <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}" alt="">
+        <p><strong>Address:</strong>C. d'Arístides Maillol, 12, 08028 Hyderabad</p>
+        <p><strong>Phone:</strong>(+91) 9059301111/(+91) 7842759904</p>
+        <p><strong>Hours:</strong> 9:30 - 1:30</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <a href="#" class="fa fa-facebook"></a>  
+                <a href="#" class="fa fa-twitter"></a>  
+                <a href="#" class="fa fa-pinterest"></a>  
+                <a href="#" class="fa fa-linkedin"></a>  
+                <a href="#" class="fa fa-instagram"></a>  
+                <a href="#" class="fa fa-youtube"></a>  
+
+            </div>
+        </div>
+    </div>
+    <div class="col1">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="details">Details</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+</footer>
+ </body>
+</html>

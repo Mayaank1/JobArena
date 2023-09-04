@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Transparent Login Form HTML CSS</title>
+      <link rel="stylesheet" href="{% static 'css/Styles.css'%}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   </head>
+   <body>
+    
+    <div id="header">
+        <a href="/"> <img src="{% static 'css/Images/Screenshot 2023-05-21 120544.png'%}"  class="logo"></a>
+        <ul id="navbar">
+            <li><a  href="">Overview</a></li>
+            <li><a href="companies">Find Companies</a></li>
+            <li><a  class="active" href="login">Login</a></li>
+            <li><a href="support">Support</a></li>
+        </ul>
+    
+    </div>
+    
+
+    <section class="lg">
+
+        <div class="bg-img">
+            <div class="content">
+              <div class="log">
+                {% if  messages %}
+                  {% for message in messages %}
+                    <div class="alert alert-warning" role="alert">
+                      {{message}}
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                  
+                  {% endfor %}
+                {% endif %}
+      
+              {% block content %}
+              {% endblock %}
+              </div>
+              <header>Login</header>
+              <form action="login_user" method="POST">
+                {% csrf_token %}
+                <div class="field">
+                  <span class="fa fa-user"></span>
+                  <input type="text" name="username" required placeholder="Email or Phone">
+                </div>
+                <div class="field space">
+                  <span class="fa fa-lock"></span>
+                  <input type="password" class="pass-key" required placeholder="Password" name="password">
+                  <span class="show">SHOW</span>
+                </div>
+                <div class="pass">
+                  <a href="#">Forgot Password?</a>
+                </div>
+                <div class="field">
+                  <input type="submit" value="Login">
+                </div>
+        
+              </form>
+              <div class="login">Or login with</div>
+              <div class="links">
+                <div class="facebook">
+                  <i class="fab fa-facebook-f" onclick=""><span>Facebook</span></i>
+                </div>
+                <div class="LinkedIn">
+                  <i class="fab fa-linkedin"><span>LinkedIn</span></i>
+                </div>
+              </div>
+              <div class="signup">Don't have account?
+                <a href="signup">Signup Now</a>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
